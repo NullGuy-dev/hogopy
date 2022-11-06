@@ -9,6 +9,15 @@ import geocoder
 import threading
 import requests
 import colorama
+from setuptools import setup, find_packages
+setup(name='hogopy',
+      version='0.0.1',
+      url='https://github.com/HCoderHY/hogopy/',
+      license='MIT',
+      author='HCoder/Bogdan Tanov',
+      author_email='playmister00@gmail.com',
+      description='Hogopy - it is a library with various functions.',
+      zip_safe=False)
 def dos(url, isWriteMessage):
     try:
         requests.get(url)
@@ -18,7 +27,7 @@ def dos(url, isWriteMessage):
     except requests.exceptions.ConnectionError:
         if isWriteMessage:
             print("Connection error!") 
-class sogopy:
+class hogopy:
     def conv_image(imageURLWithName, newImageURLWithName):
         img = Image.open(imageURLWithName)
         img.save(newImageURLWithName)
