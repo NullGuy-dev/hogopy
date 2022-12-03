@@ -1,0 +1,12 @@
+Documentation for HOGOPY - Botnet (Enter these commands into the line on Telegra.ph):
+restartAll - Restart the programs of bots on all infected computers.
+restartApp userip - Restart the bot program on a specific computer on its IP (instead of userip, enter a real IP victim).
+turnOffAll - Turn off all infected computer.
+turnOff userip - Turn off the defined victim's computer through its IP (instead of userip, enter a real IP victim).
+restartSYSAll - Reload all infected computers.
+restartSYS - Reload a certain infected computer through its IP (instead of userip, enter a real IP victim).
+ddos websitedomain - Ddos attack on the site (Instead of websitedomain, insert a link to the site for attack).
+closeAll - Close the bot program on all infected computers.
+closeApp userip - Close the bot program on a specific infected computer according to its IP (instead of userip, enter a real IP victim).
+deleteAllBotes - Run the program to delete the bot program for all infected computers (but the program to remove the main program remain).
+deleteBot userip - Run the program to delete the bot program on a specific computer on its IP (but the program to delete the main program to stay) (instead of userip, enter a real IP victim).
